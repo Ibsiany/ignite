@@ -5,7 +5,7 @@ export class CreateCars1619435182139 implements MigrationInterface {
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.createTable(
             new Table({
-                name: "cars",
+                name: "car",
                 columns: [
                     {
                         name: "id",
@@ -47,7 +47,7 @@ export class CreateCars1619435182139 implements MigrationInterface {
                         isNullable: false
                     },
                     {
-                        name: "creted_at",
+                        name: "created_at",
                         type: "timestamp",
                         default: "now()"
                     },
@@ -67,7 +67,7 @@ export class CreateCars1619435182139 implements MigrationInterface {
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.dropTable("cars");
+        await queryRunner.dropTable("car");
     }
 
 }
