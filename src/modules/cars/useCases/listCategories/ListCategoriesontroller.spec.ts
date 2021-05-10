@@ -35,7 +35,7 @@ describe('List categories', () => {
                 password: "admin",
             })
 
-        const {refresh_token} = responseToken.body;
+        const token = responseToken.body.token;
 
         await request(app)
         .post("/categories")
@@ -44,7 +44,7 @@ describe('List categories', () => {
           description: "Category Supertest",
         })
         .set({
-          Authorization: `Bearer ${refresh_token}`,
+          Authorization: `Bearer ${token}`,
         });
 
         const response = await request(app).get("/categories");
