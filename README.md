@@ -47,3 +47,4 @@
 - Não deve ser possível cadastrar um novo aluguel caso já exista um aberto para o mesmo usuário.
 - Não deve ser possível cadastrar um novo aluguel caso já exista um aberto para o mesmo carro.
 - O usuário deve estar logado.
+- Ao realizar um aluguel, o status do carro deverá ser alterado para indisponível.
