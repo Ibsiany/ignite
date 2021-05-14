@@ -18,7 +18,7 @@ class RefreshTokenUseCase{
         private dateProvider: IDateProvider,
     ){}
 
-    async execute(token:string){
+    async execute(token:string): Promise<string>{
         const {
             secret_refresh_token,
             expires_in_refresh_token,
