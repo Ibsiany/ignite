@@ -14,6 +14,7 @@
     "@types/nodemailer": "^6.4.1",
     "aws-sdk": "^2.929.0",
     "bcryptjs": "^2.4.3",
+    "class-transformer": "^0.4.0",
     "csv-parse": "^4.15.3",
     "dayjs": "^1.10.4",
     "dotenv": "^10.0.0",
@@ -26,6 +27,7 @@
     "nodemailer": "^6.6.0",
     "pg": "^8.6.0",
     "swagger-ui-express": "^4.1.6",
+    "tslib": "^2.3.0",
     "tsyringe": "^4.5.0",
     "typeorm": "^0.2.32",
     "uuid": "^8.3.2"
