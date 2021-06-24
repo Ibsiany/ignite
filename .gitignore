@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+.vscode
 
 # testing
 /coverage
@@ -33,3 +34,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+#outros
+tmp/*
+!tmp/.gitkeep
+dist
+ormconfig.json
