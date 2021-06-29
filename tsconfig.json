@@ -5,14 +5,7 @@
     "module": "commonjs",                           
     "outDir": "./dist",                              
     "rootDir": "./",                           
-    "baseUrl": "./src",      
-    "paths": {
-      "@modules/*": ["modules/*"],
-      "@config/*": ["config/*"],
-      "@shared/*": ["shared/*"],
-      "@errors/*": ["errors/*"],
-      "@utils/*": ["utils/*"]
-    },                                 
+    "baseUrl": "./src",                                    
     "esModuleInterop": true,                        
     "experimentalDecorators": true,              
     "emitDecoratorMetadata": true,                
