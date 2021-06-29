@@ -1,4 +1,4 @@
-import { RefreshTokenController } from '@modules/accounts/useCases/refreshToken/RefreshTokenController';
+import { RefreshTokenController } from '../../../../modules/accounts/useCases/refreshToken/RefreshTokenController';
 import {Router} from 'express';
 import { AuthenticateUserController } from '../../../../modules/accounts/useCases/authenticateUser/AuthenticateUserController';
 

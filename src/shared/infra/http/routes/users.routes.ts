@@ -4,7 +4,7 @@ import { CreateUserController } from '../../../../modules/accounts/useCases/crea
 import { UpdateUserAvatarController } from '../../../../modules/accounts/useCases/updateUserAvatar/UpdateUserAvatarController';
 import uploadConfig from '../../../../config/upload'
 import { ensureAuthenticated } from '../middlewares/ensureAuthenticated';
-import { ProfileUserController } from '@modules/accounts/useCases/profileUserUseCase/ProfileUserController';
+import { ProfileUserController } from '../../../../modules/accounts/useCases/profileUserUseCase/ProfileUserController';
 
 const usersRoutes = Router();
 

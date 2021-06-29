@@ -1,6 +1,6 @@
 import fs from 'fs';
 import {resolve} from 'path'
-import upload from '@config/upload'
+import upload from '../../../../../config/upload'
 import { IStorageProvider } from "../IStorageProvider";
 
 

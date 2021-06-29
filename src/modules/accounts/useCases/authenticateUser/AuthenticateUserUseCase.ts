@@ -1,11 +1,11 @@
 import { inject, injectable } from "tsyringe";
 import bcrypt from 'bcryptjs';
 import {sign} from 'jsonwebtoken';
-import {AppError} from '@shared/errors/AppError'
-import { IUsersRepository } from "@modules/accounts/repositories/IUsersRepository";
-import { IUsersTokensRepository } from "@modules/accounts/repositories/IUsersTokensRepository";
-import auth from "@config/auth";
-import { IDateProvider } from "@shared/container/providers/DateProvider/IDateProvider";
+import {AppError} from '../../../../shared/errors/AppError'
+import { IUsersRepository } from "../../../../modules/accounts/repositories/IUsersRepository";
+import { IUsersTokensRepository } from "../../../../modules/accounts/repositories/IUsersTokensRepository";
+import auth from "../../../../config/auth";
+import { IDateProvider } from "../../../../shared/container/providers/DateProvider/IDateProvider";
 
 
 interface IRequest {

@@ -2,8 +2,8 @@ import {Connection} from 'typeorm';
 import bcrypt from "bcryptjs";
 import request from 'supertest';
 import {v4 as uuidv4} from 'uuid';
-import { app } from '@shared/infra/http/app';
-import createConnection from '@shared/infra/typeorm';
+import { app } from '../../../../shared/infra/http/app';
+import createConnection from '../../../../shared/infra/typeorm';
 
 let connection:Connection;
 describe('Create Category Controller', () => {

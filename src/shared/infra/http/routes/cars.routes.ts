@@ -1,12 +1,12 @@
 import {Router} from 'express'
 import multer from 'multer'
 import uploadConfig from '../../../../config/upload'
-import { CreateCarController } from '@modules/cars/useCases/createCar/CreateCarController'
+import { CreateCarController } from '../../../../modules/cars/useCases/createCar/CreateCarController'
 import { ensureAuthenticated } from '../middlewares/ensureAuthenticated'
 import { ensureAdmin } from '../middlewares/ensureAdmin'
-import { ListAvailableCarsController } from '@modules/cars/useCases/listAvailableCars/ListAvailableCarsController'
-import { UploadCarImagesController } from '@modules/cars/useCases/uploadCarImage/UploadCarImagesController'
-import { CreateCarSpecificationController } from '@modules/cars/useCases/createCarSpecification/CreateCarSpecificationController'
+import { ListAvailableCarsController } from '../../../../modules/cars/useCases/listAvailableCars/ListAvailableCarsController'
+import { UploadCarImagesController } from '../../../../modules/cars/useCases/uploadCarImage/UploadCarImagesController'
+import { CreateCarSpecificationController } from '../../../../modules/cars/useCases/createCarSpecification/CreateCarSpecificationController'
 
 const carsRoutes = Router()
 

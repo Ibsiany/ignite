@@ -1,10 +1,10 @@
-import { AppError } from "@shared/errors/AppError";
-import { ICreateUserDTO } from "@modules/accounts/dtos/ICreateUserDTO";
-import { UsersRepositoryInMemory } from "@modules/accounts/repositories/in-memory/UsersRepositoryInMemory";
+import { AppError } from "../../../../shared/errors/AppError";
+import { ICreateUserDTO } from "../../../../modules/accounts/dtos/ICreateUserDTO";
+import { UsersRepositoryInMemory } from "../../../../modules/accounts/repositories/in-memory/UsersRepositoryInMemory";
 import { CreateUserUseCase } from "../createUser/CreateUserUseCase";
 import { AuthenticateUserUseCase } from "./AuthenticateUserUseCase";
-import { UsersTokensRepositoryInMemory } from "@modules/accounts/repositories/in-memory/UsersTokensRepositoryInMemory";
-import { DayjsDateProvider } from "@shared/container/providers/DateProvider/implementatios/DayjsDateProvider";
+import { UsersTokensRepositoryInMemory } from "../../../../modules/accounts/repositories/in-memory/UsersTokensRepositoryInMemory";
+import { DayjsDateProvider } from "../../../../shared/container/providers/DateProvider/implementatios/DayjsDateProvider";
 
 let authenticateUserUseCase: AuthenticateUserUseCase;
 let usersRepositoryInMemory: UsersRepositoryInMemory;

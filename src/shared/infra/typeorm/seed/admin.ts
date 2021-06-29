@@ -3,7 +3,7 @@ import bcrypt from "bcryptjs"
 import createConnection from '../index'
 
 async function create(){
-    const connection = await createConnection("localhost")
+    const connection = await createConnection()
 
     const id = uuidv4();
     const salt = bcrypt.genSaltSync(8); 

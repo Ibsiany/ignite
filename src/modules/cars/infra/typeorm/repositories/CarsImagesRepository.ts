@@ -1,4 +1,4 @@
-import { ICarsImagesRepository } from "@modules/cars/repositories/ICarsImagesRepository";
+import { ICarsImagesRepository } from "../../../../../modules/cars/repositories/ICarsImagesRepository";
 import { getRepository, Repository } from "typeorm";
 import { CarImage } from "../entities/CarImage";
 
