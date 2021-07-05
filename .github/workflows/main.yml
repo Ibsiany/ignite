@@ -26,7 +26,7 @@ jobs:
         run: yarn build
         
 
-      - uses: appleboy/scp-action@master
+      - uses: appleboy/scp-action@main
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
@@ -36,14 +36,14 @@ jobs:
           target: "~/user/ignite"
           
       - name: Update API
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@main
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }} 
           script: |
-            cd ~/app/api-rentx
+            cd ~/user/ignite
             yarn
             ./node_modules/.bin/typeorm migration:run
             pm2 restart rentx_api
