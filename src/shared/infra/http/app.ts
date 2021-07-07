@@ -8,14 +8,18 @@ import cors from 'cors';
 import "../typeorm"
 import "../../../shared/container"
 import { AppError } from "../../../shared/errors/AppError";
+import rateLimiter from '../http/middlewares/rateLimiter';
 import createConnection from "../../../shared/infra/typeorm"
 
 import swaggerFile from '../../../swagger.json';
 import { router } from './routes';
 import upload from "../../../config/upload";
 
+
 createConnection()
 const app = express();
+
+app.use(rateLimiter)
 app.use(express.json());
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
