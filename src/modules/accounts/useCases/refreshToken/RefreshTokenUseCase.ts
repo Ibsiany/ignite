@@ -3,7 +3,7 @@ import {sign, verify} from 'jsonwebtoken';
 import { IUsersTokensRepository } from '../../../../modules/accounts/repositories/IUsersTokensRepository';
 import auth from '../../../../config/auth';
 import { AppError } from '../../../../shared/errors/AppError';
-import { IDateProvider } from '../../../../shared/container/providers/DateProvider/IDateProvider';
+import { IDateProvider } from 'shared/container/providers/DateProvider/IDateProvider';
 
 interface IPaylood {
     sub: string;

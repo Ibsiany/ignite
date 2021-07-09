@@ -2,8 +2,8 @@ import { inject, injectable } from 'tsyringe';
 import bcrypt from 'bcryptjs';
 import { AppError } from '../../../../shared/errors/AppError';
 import { IUsersTokensRepository } from '../../../../modules/accounts/repositories/IUsersTokensRepository';
-import { IDateProvider } from '../../../../shared/container/providers/DateProvider/IDateProvider';
 import { IUsersRepository } from '../../../../modules/accounts/repositories/IUsersRepository';
+import { IDateProvider } from 'shared/container/providers/DateProvider/IDateProvider';
 
 interface IRequest {
     token: string;

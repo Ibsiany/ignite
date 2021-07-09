@@ -4,7 +4,7 @@ import { UsersRepositoryInMemory } from "../../../../modules/accounts/repositori
 import { CreateUserUseCase } from "../createUser/CreateUserUseCase";
 import { AuthenticateUserUseCase } from "./AuthenticateUserUseCase";
 import { UsersTokensRepositoryInMemory } from "../../../../modules/accounts/repositories/in-memory/UsersTokensRepositoryInMemory";
-import { DayjsDateProvider } from "../../../../shared/container/providers/DateProvider/implementatios/DayjsDateProvider";
+import { DayjsDateProvider } from "shared/container/providers/DateProvider/implementatios/DayjsDateProvider";
 
 let authenticateUserUseCase: AuthenticateUserUseCase;
 let usersRepositoryInMemory: UsersRepositoryInMemory;
